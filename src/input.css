@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn{
+    @apply border border-red-300 py-2 px-4 text-white rounded-xl;
+    ;
+}
+
+.card{
+    @apply w-80 h-80 shadow-lg rounded-3xl overflow-hidden
+}

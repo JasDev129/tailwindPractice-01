@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Tailwind_01</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="fixed top-0 left-0 right-0 bg-red-600 z-10">
+            <nav class="flex justify-between items-center py-4 px-8 md:px-40 text-white">
+                <div class="relative left-0 top-0 w-full">
+                    <a href="#" class="text-4xl">logo</a>
+                    <span class="absolute top-4 right-0 md:hidden"><svg class="w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></span>
+                </div>
+                <ul class="gap-4 text-base md:text-lg uppercase font-semibold hidden md:flex items-center">
+                    <li class="hover:text-yellow-400"><a href="#hero-section">Home</a></li>
+                    <li class="hover:text-yellow-400"><a href="#about-section">About</a></li>
+                    <li class="hover:text-yellow-400"><a href="#product-section">Product</a></li>
+                    <li class="hover:text-yellow-400"><a href="#footer-section">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="">
+            <section id="hero-section" class=" bg-red-600 h-screen w-full flex flex-col justify-center items-center flex-col-reverse md:flex-row gap-9 flex-wrap">
+                <div class="md:basis-1/2 px-8">
+                    <h1 class="text-white text-lg md:text-5xl md:text-left pb-4">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+                    <p class="text-white md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eligendi praesentium aperiam laboriosam voluptas optio culpa, ratione saepe at dolorum corporis natus beatae fugit cupiditate maxime officiis repudiandae, molestiae possimus.</p>
+                    <a class="btn relative top-10 md:top-20 left-0 hover:text-yellow-400 hover:border-yellow-400 font-semibold" href="#product-section">View more</a>
+                </div>
+                <div class="hero-img sm:basis-1/4">
+                        <div class="hero-imgs rounded-lg overflow-hidden">
+                            <img class="w-64 md:w-auto" src="https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?cs=srgb&dl=pexels-suzy-hazelwood-2536965.jpg&fm=jpg" alt="">
+                        </div>
+                </div>
+            </section>
+            <section id="product-section" class="w-full h-auto">
+                <div class="text-center underline">
+                    <h1 class="text-5xl pt-20 font-semibold">Product</h1>
+                </div>
+                    <div class="flex flex-wrap items-center justify-center gap-8 py-16 md:py-32">
+                        <div class="card">
+                            <img class="w-80 max-h-72" src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-math-90946.jpg&fm=jpg" alt="">
+                        </div> 
+                            
+                         <div class="card">
+                            <img class="w-80 max-h-72" src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?cs=srgb&dl=pexels-suzy-hazelwood-2533266.jpg&fm=jpg" alt="">
+                        </div>
+                        <div class="card">
+                            <img class="w-80 max-h-56" src="https://images.pexels.com/photos/3685523/pexels-photo-3685523.jpeg?cs=srgb&dl=pexels-valeriia-miller-3685523.jpg&fm=jpg" alt="">
+                        </div>
+                        <div class="card">
+                            <img class="w-80 max-h-56" src="https://images.pexels.com/photos/3685523/pexels-photo-3685523.jpeg?cs=srgb&dl=pexels-valeriia-miller-3685523.jpg&fm=jpg" alt="">
+                        </div>
+                        <div class="card">
+                            <img class="w-80 max-h-56" src="https://images.pexels.com/photos/3685523/pexels-photo-3685523.jpeg?cs=srgb&dl=pexels-valeriia-miller-3685523.jpg&fm=jpg" alt="">
+                        </div>
+                        <div class="card">
+                            <img class="w-80 max-h-56" src="https://images.pexels.com/photos/3685523/pexels-photo-3685523.jpeg?cs=srgb&dl=pexels-valeriia-miller-3685523.jpg&fm=jpg" alt="">
+                        </div>
+                    </div>
+            </section>
+            <section id="about-section" class="w-full bg-red-600 ">
+                <div class="text-white underline">
+                    <h1 class="text-5xl text-center pt-20 font-semibold">About Us</h1>
+                </div>
+                <div class="flex justify-center flex-wrap md:flex-nowrap items-center gap-16 md:p-60 p-16">
+                    <div class="about-img basis-full">
+                        <img class="w-80" src="https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?cs=srgb&dl=pexels-suzy-hazelwood-2536965.jpg&fm=jpg" alt="">
+                    </div>
+                    <div class="about-text text-white">
+                        <h1 class="text-2xl md:text-3xl text-left mb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit!</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime consectetur quae temporibus, magnam, quam nihil, quos optio alias inventore cupiditate obcaecati ipsum repellendus pariatur eligendi?</p>
+                    </div>
+                </div>    
+            </section>
+        </main>
+
+        <footer id="footer-section">
+            <div class="flex flex-wrap gap-16 py-16 justify-around items-center">
+                <div>
+                    <h1 class="text-4xl mb-8 text-center md:text-left">Logo</h1>
+                    <p class="font-semibold uppercase">Address: <span class="capitalize font-normal">Brgy. Pinagbuhatan Central Uno Putok</span></p>
+                    <p class="font-semibold uppercase">Email: <span class="capitalize font-normal">juandelacruz@gmail.com</span></p>
+                    <p class="font-semibold uppercase">Contact-Number: <span class="capitalize font-normal">091234567891</span></p>
+                </div>
+                <div>
+                    <div class="w-50 h-50 shadow-2xl border-2 border-red-500 rounded-xl p-8 flex flex-col items-center gap-4">
+                        <h1 class="text-2xl mb-8 underline">Contact US!</h1>
+                        <div class="input-text">
+                            <label for="#fname" class="font-semibold uppercase mr-4">Name: </label>
+                            <input class="border-2 border-black rounded-full py-2 px-4 hover:bg-red-300 focus:bg-red-400 focus:text-white"  id="fname" type="text" placeholder="Full name">
+                        </div>
+                         <div class="input-text">
+                            <label for="#fname" class="font-semibold uppercase mr-4">Address: </label>
+                            <input class="border-2 border-black rounded-full py-2 px-4 hover:bg-red-300 focus:bg-red-400 focus:text-white"  id="fname" type="text" placeholder="Address">
+                        </div>
+                         <div class="input-text">
+                            <h2 class="text-center my-2">Comment</h2>
+                            <textarea class="text-left border-2 border-black p-2 hover:bg-red-300 focus:bg-red-400 focus:text-white"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <h1 class="text-3xl text-center py-16 md:py-8">Socials</h1>
+                    <ul class="flex md:flex-col gap-8 items-center text-2xl">
+                        <li><a href="https://www.facebook.comg"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
